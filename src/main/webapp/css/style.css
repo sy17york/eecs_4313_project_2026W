@@ -1,0 +1,162 @@
+/* Global Styles */
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f9f9f9;
+	color: #333;
+	line-height: 1.6;
+}
+
+h1 {
+	color: #0056b3;
+	text-align: center;
+	margin: 20px 0;
+	font-size: 2em;
+}
+
+a {
+	text-decoration: none;
+	color: #0056b3;
+	transition: color 0.3s ease;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #003d80;
+}
+
+/* Table Styles */
+table {
+	width: 90%;
+	margin: 20px auto;
+	border-collapse: collapse;
+	background: white;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+table th,
+table td {
+	border: 1px solid #ddd;
+	padding: 12px;
+	text-align: left;
+	font-size: 0.9em;
+}
+
+table th {
+	background-color: #f2f2f2;
+	font-weight: bold;
+}
+
+table tr:hover {
+	background-color: #f9f9f9;
+}
+
+table tr:nth-child(even) {
+	background-color: #fafafa;
+}
+
+/* Form Styles */
+form {
+	width: 50%;
+	margin: 20px auto;
+	background: white;
+	padding: 20px;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+	display: block;
+	margin-bottom: 8px;
+	font-weight: bold;
+	font-size: 0.95em;
+	color: #333;
+}
+
+form input,
+form textarea,
+form select,
+form button {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-size: 0.95em;
+	box-sizing: border-box;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+	border-color: #0056b3;
+	outline: none;
+	box-shadow: 0 0 4px rgba(0, 86, 179, 0.5);
+}
+
+button {
+	background-color: #0056b3;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 4px;
+	font-size: 1em;
+	transition: background-color 0.3s ease;
+}
+
+button:hover {
+	background-color: #003d80;
+}
+
+/* Container */
+.container {
+	width: 90%;
+	margin: auto;
+	overflow: hidden;
+	padding: 10px;
+}
+
+/* Utility Classes */
+.error {
+	color: red;
+	text-align: center;
+	font-weight: bold;
+	margin: 10px 0;
+}
+
+.success {
+	color: green;
+	text-align: center;
+	font-weight: bold;
+	margin: 10px 0;
+}
+
+.hidden {
+	display: none;
+}
+
+/* Responsive Design */
+@media (max-width : 768px) {
+
+	table,
+	form {
+		width: 100%;
+	}
+
+	form label,
+	form input,
+	form textarea,
+	form select,
+	form button {
+		font-size: 0.85em;
+	}
+
+	h1 {
+		font-size: 1.5em;
+	}
+}
