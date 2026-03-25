@@ -34,6 +34,21 @@ All Selenium tests are located in `src/main/java/SeleniumTest/`:
    - **Eclipse** – right‑click on a test class → **Run As → JUnit Test**
    - **Maven** – `mvn test`
 
+## Dependencies
+
+The project uses the following libraries (provided in `WEB-INF/lib`):
+- Selenium Java 4.41.0
+- SQLite JDBC (for the demo application’s database)
+- Commons FileUpload (for handling file uploads in the admin interface)
+
+## Notes
+
+- The EdgeDriver version must match the installed Edge browser version.
+- If you encounter issues with the WebDriver location, set the system property `webdriver.edge.driver` in `BaseTest.java`:
+  ```java
+  System.setProperty("webdriver.edge.driver", "path/to/msedgedriver.exe");
+
+
 ## Vedio demos
 
 demo 1 manual: 
@@ -48,17 +63,3 @@ demo 3 ai_fixed:
 
 https://github.com/user-attachments/assets/8f6cde1f-7fc1-46ff-a1d7-59fcbfe66c11
 
-
-## Dependencies
-
-The project uses the following libraries (provided in `WEB-INF/lib`):
-- Selenium Java 4.41.0
-- SQLite JDBC (for the demo application’s database)
-- Commons FileUpload (for handling file uploads in the admin interface)
-
-## Notes
-
-- The EdgeDriver version must match the installed Edge browser version.
-- If you encounter issues with the WebDriver location, set the system property `webdriver.edge.driver` in `BaseTest.java`:
-  ```java
-  System.setProperty("webdriver.edge.driver", "path/to/msedgedriver.exe");
