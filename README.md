@@ -21,7 +21,9 @@ All Selenium tests are located in `src/main/java/SeleniumTest/`:
 ## Running the Tests
 
 1. **Start the web application**  
-   Deploy the project on Tomcat 9.0.89 and start the server. The application should be accessible at `http://localhost:8080/` (or your configured base URL).
+   Deploy the project on Tomcat 9.0.89 and start the server. The application should be accessible at `http://localhost:8080/` (or your configured
+
+ base URL).
 
 2. **Update the base URL** (if needed)  
    In `BaseTest.java`, adjust the `baseUrl` variable to match your Tomcat deployment.
@@ -31,6 +33,21 @@ All Selenium tests are located in `src/main/java/SeleniumTest/`:
 
    - **Eclipse** – right‑click on a test class → **Run As → JUnit Test**
    - **Maven** – `mvn test`
+
+## Vedio demos
+
+demo 1 manual: 
+
+https://github.com/user-attachments/assets/b3f99722-24cb-4a16-815c-5bd31ee06d9a
+
+demo 2 ai:
+
+https://github.com/user-attachments/assets/72133b4c-d725-4166-8f57-2d767fe55bf5
+
+demo 3 ai_fixed:
+
+https://github.com/user-attachments/assets/8f6cde1f-7fc1-46ff-a1d7-59fcbfe66c11
+
 
 ## Dependencies
 
